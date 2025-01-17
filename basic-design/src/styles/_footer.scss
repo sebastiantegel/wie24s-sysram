@@ -1,0 +1,34 @@
+@use "./mixins" as m;
+
+footer {
+  background-color: grey;
+  height: 150px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  @include m.forSize(tablet) {
+    height: 20dvh;
+    flex-direction: row;
+  }
+
+  @include m.forSize(desktop) {
+  }
+
+  div {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include m.forSize(tablet) {
+      width: 30%;
+
+      &:first-child {
+        width: 40%;
+      }
+    }
+  }
+}
