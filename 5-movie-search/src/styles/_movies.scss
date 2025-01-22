@@ -1,0 +1,17 @@
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  .movie {
+    width: 30%;
+
+    .image-container {
+      width: 90%;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
